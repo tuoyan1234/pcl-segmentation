@@ -1,7 +1,7 @@
 # 拟合方法
 isPlaneSegmentation: true
 isLineSegmentation: true
-isCylindricalSegmentation: true
+isCylindricalSegmentation: false
 # 输入点云路径
 inputPath: /home/zhengyuxiang/Downloads/pointcloud/pointcloud.ply
 # 输出点云路径
