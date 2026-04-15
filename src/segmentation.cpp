@@ -2,7 +2,7 @@
  * @Author: tyz 1872516355@qq.com
  * @Date: 2026-04-13 21:51:59
  * @LastEditors: tyz 1872516355@qq.com
- * @LastEditTime: 2026-04-13 23:02:08
+ * @LastEditTime: 2026-04-15 21:23:30
  * @FilePath: /Desktop/平面拟合/src/segmentation.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -23,8 +23,8 @@ bool PclSegmentation::ransacPlaneSegmentation(pcl::PointCloud<pcl::PointXYZ>::Pt
     seg.setOptimizeCoefficients(true);
     seg.setModelType(pcl::SACMODEL_PLANE);
     seg.setMethodType(pcl::SAC_RANSAC);
-    seg.setMaxIterations(50);
-    seg.setDistanceThreshold(0.05);
+    seg.setMaxIterations(100);
+    seg.setDistanceThreshold(0.1);
     seg.setInputCloud(cloud_in);
     seg.segment(*inliers, *coefficients);
     pcl::ExtractIndices<pcl::PointXYZ> extract;

@@ -1,11 +1,11 @@
 # 拟合方法
 isPlaneSegmentation: true
-isLineSegmentation: true
+isLineSegmentation: false
 isCylindricalSegmentation: false
 # 输入点云路径
-inputPath: /home/zhengyuxiang/Downloads/pointcloud/pointcloud.ply
+inputPath: ../ply/1744870787.176924.ply
 # 输出点云路径
 outputPath: /home/zhengyuxiang/Downloads/pointcloud/pointcloud_output.ply
 # 超参数
-disThreshold: 0.01
-maxIterationCount: 1000
+disThreshold: 0.1
+maxIterationCount: 100
